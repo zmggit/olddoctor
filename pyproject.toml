@@ -3,18 +3,27 @@ name = "olddoctor"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
-    "embeddings>=0.0.8",
-    "huggingface>=0.0.1",
-    "llama-index-core>=0.14.22",
-    "numpy>=2.5.0",
-    "python-dotenv>=1.2.2",
-    "requests>=2.34.2",
+    "chromadb==1.0.0",
+    "langchain==0.3.0",
+    "langchain-community==0.3.0",
+    "langchain-deepseek>=0.1.0",
+    "llama-index-core",
+    "llama-index-embeddings-huggingface>=0.2.0",
+    "llama-index-vector-stores-chroma",
+    "sentence-transformers>=3.0.0",
+    "torch>=2.0.0",
+    "transformers==4.47.0",
+    "tokenizers",
+    "numpy>=1.26.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+    "huggingface-hub>=0.20.0",
 ]
 
 [dependency-groups]
 dev = [
-    "pytest>=9.1.1",
-    "ruff>=0.15.18",
+    "pytest>=8.0.0",
+    "ruff>=0.3.0",
 ]
