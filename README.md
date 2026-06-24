@@ -1,4 +1,7 @@
 # OldDoctor - 中医AI助手
+### 想稳定输出，可以考虑在System Prompt里固定辩证框架（比如“优先采纳《本草经集注》的观点”）。
+ wget https://github.com/TonguePicture-SKaRD/TongueDiagnosis/releases/download/V1.0_Beta/best.pt -O tongue_detect.pt
+
 
 基于 RAG + LLM 的中医智能辨证论治系统。结合《神农本草经》《吴普本草》《本草经集注》《食疗本草》等经典典籍，使用 DeepSeek 大模型进行多轮对话诊断。
 
@@ -22,6 +25,9 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ```bash
 uv pip install huggingface_hub
 hf download BAAI/bge-base-zh-v1.5 --local-dir ./models/bge-base-zh-v1.5
+
+hf download facebook/convnext-base-224 --local-dir ./models/convnext-base-224
+
 ```
 
 ### 3. 配置环境变量

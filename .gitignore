@@ -12,3 +12,4 @@ wheels/
 /models/
 /chroma_db/
 *.db
+/collect/tongue/weights/
